@@ -1,13 +1,12 @@
-print "こんにちは"
+print 'こんにちは'
 p 'こんにちは'
 
-puts "こんにちは 年齢を入力してください"
-age = gets.chomp #getsでキーボードなどからの文字列の入力を待つことできる。chompで改行文字を削除。
-print "こんにちはあなたの年齢は" + age + "才ですね"
+puts 'こんにちは 年齢を入力してください'
+age = gets.chomp #getsでキーボードなどからの文字列の入力を待つことができる。chompで改行文字を削除。
+print 'こんにちはあなたの年齢は' + age + '才ですね'
 
 is_odd = 13.odd?
 p is_odd #true
-
 
 # print改行なし、pとputsは改行あり、pは出力するデータの型も出力する
 # JavaScriptと違い、変数名の前にconstやletを付けない

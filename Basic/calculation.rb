@@ -8,25 +8,25 @@ p 10.remainder(3) #1
 a = 2
 b = 4
 
-+a            # 正数
--a            # 負数
-a + b         # 加算
-a - b         # 減算
-a * b         # 乗算
-a / b         # 除算
-a % b         # a を b で割った余り
-a ** b        # a の b 乗
++a # 正数
+-a # 負数
+a + b # 加算
+a - b # 減算
+a * b # 乗算
+a / b # 除算
+a % b # a を b で割った余り
+a**b # a の b 乗
 
 # Ruby には a++ や ++a のような加算子(インクリメント)、減算子(デクリメント)は無い無い。代わりに +=, -= を用いる。
 
 # a += 1        # a の値をひとつ加算する
-# a-= 1        # a の値をひとつ減算する
+# a -= 1        # a の値をひとつ減算する
 
 # 文字列の連結
-str1 = "Hello"
-str2 = "World!"
+str1 = 'Hello'
+str2 = 'World!'
 p str2
 n = 3
-p str1 + str2    # 文字列str1とstr2を連結(遅い、str1自体は変更無し)
-p str1 << str2      # 文字列str1とstr2を連結(高速、str1自体が変更される)
-p str1 * n          # 文字列str1を n回繰り返した文字列
+p str1 + str2 # 文字列str1とstr2を連結(遅い、str1自体は変更無し)
+p str1 << str2 # 文字列str1とstr2を連結(高速、str1自体が変更される)
+p str1 * n # 文字列str1を n回繰り返した文字列
