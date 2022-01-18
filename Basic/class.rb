@@ -1,4 +1,6 @@
+#親クラス
 class Fruits
+    #コンストラクタ（インスタンスメソッド、インスタンス変数）
     def initialize(name, price, quantity)
         @name = name
         @price = price
@@ -16,9 +18,15 @@ class Fruits
     end
 end
 
+#子クラス（クラスの継承）
 class Info < Fruits
     def show_price_detail
         puts "#{@name}の価格は#{@price}円です。"
+    end
+
+    #ポリモーフィズム（クラス継承時に親クラスのメソッドの挙動に関係なく、オーバーライドすることができる。)
+    def calc_sales(price, quantity)
+        price * quantity + 100
     end
 end
 
