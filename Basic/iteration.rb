@@ -19,7 +19,7 @@ end
 #ハッシュの繰り返し処理
 array = []
 for key, value in { 'Apple': 130, 'Banana': 100, 'Melon': 400, 'Orange': 160 }
-    array.push(name: key, price: value)
+    array.push({ name: key, price: value })
 end
 puts array
 
