@@ -22,3 +22,13 @@ unless a > 5
 else
     puts "#{a} is greater than 5"
 end
+
+# case文
+case a
+when 3
+    puts 3
+when 5
+    puts 5
+when 7
+    puts 7
+end
