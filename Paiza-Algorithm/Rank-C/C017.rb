@@ -9,8 +9,7 @@ for num in 1..input_line[1].to_i
 
     if parent_card_nums[0].to_i > children_card_nums[0].to_i
         result.push('High')
-    elsif parent_card_nums[0] == children_card_nums[0] &&
-            parent_card_nums[1].to_i < children_card_nums[1].to_i
+    elsif parent_card_nums[0] == children_card_nums[0] && parent_card_nums[1].to_i < children_card_nums[1].to_i
         result.push('High')
     else
         result.push('Low')
