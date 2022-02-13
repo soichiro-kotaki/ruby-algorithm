@@ -7,6 +7,6 @@ for num in 1..input_line[0].to_i
     end
 end
 
-result.push('None') if result == []
+result == [] && result.push('None')
 
 puts result
