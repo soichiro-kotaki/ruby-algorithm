@@ -36,6 +36,4 @@ class ReportEvaluation
 end
 
 input_line = readlines.map(&:chomp)
-
-report_evaluation = ReportEvaluation.new
-report_evaluation.judge_exam(input_line)
+ReportEvaluation.new.judge_exam(input_line)
