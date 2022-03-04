@@ -1,13 +1,7 @@
 #ハッシュは、JavaScriptでいうオブジェクトに当たる、keyとvalueのセットで構成されるデータの集合（一部性質が異なる）
 #
 
-hash = {
-    ruby: 'rails',
-    python: 'Django',
-    php: 'Laravel',
-    java: 'Spring',
-    JavaScript: 'React',
-}
+hash = { ruby: 'rails', python: 'Django', php: 'Laravel', java: 'Spring', JavaScript: 'React' }
 
 #要素の取得:  fetchメソッドもしくはhash[:keyの名前]
 puts hash.fetch(:ruby) # => "rails"
@@ -39,4 +33,4 @@ p hash.sort.to_h #アルファベットの昇順
 #ハッシュの各要素に対する処理:  eachメソッド
 hash.each { |key, value| puts "#{key} => #{value}" }
 
-p hash.keys
+puts hash.keys
