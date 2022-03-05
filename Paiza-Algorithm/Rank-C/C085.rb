@@ -11,8 +11,6 @@ class KeyBoard
             if durability_on_each_alphabet_keyboard[alphabet_index] > 0
                 output_on_display += entered_alphabet[num]
                 durability_on_each_alphabet_keyboard[alphabet_index] -= 1
-            else
-                next
             end
         end
 
