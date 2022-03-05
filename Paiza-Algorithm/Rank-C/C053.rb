@@ -6,7 +6,7 @@ class Card
         total_points = 0
         is_contained_x10 = point_on_each_cards.include?('x10')
 
-        is_contained_x10 && point_on_each_cards.delete(is_contained_x10)
+        is_contained_x10 && point_on_each_cards.delete('x10')
 
         sorted_point_on_each_cards = point_on_each_cards.map(&:to_i).sort
 
